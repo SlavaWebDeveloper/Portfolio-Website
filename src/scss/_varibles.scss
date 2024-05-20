@@ -1,0 +1,17 @@
+@use "./media" as *;
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+    --bg-input-color: var(--bg-color);
+}
+
+.dark-mode {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .7);
+    --bg-input-color: #120c29;
+}

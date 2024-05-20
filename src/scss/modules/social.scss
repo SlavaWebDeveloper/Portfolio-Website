@@ -1,0 +1,34 @@
+@use "../mixin" as *;
+@use "../media" as *;
+
+.social-media {
+    // .social-media__link
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 .2rem .5rem var(--shadow-color);
+        color: var(--main-color);
+        margin: 2.5rem 1.5rem 3rem 0;
+        transition: 0.5s ease;
+
+        svg {
+            width: 24px;
+        }
+
+        @include hover {
+            background: var(--main-color);
+            color: var(--white-color);
+        }
+
+        @include table {
+            margin: 2.5rem .75rem 3rem;
+        }
+    }
+}

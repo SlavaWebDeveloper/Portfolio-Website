@@ -1,0 +1,21 @@
+@use "varibles";
+@use "base";
+@use "fonts";
+@use "media";
+@use "mixin";
+@use "sticky-footer";
+@use "utils";
+@use "button";
+
+// @import "normalize.css";
+
+@import "./modules/header";
+@import "./modules/home";
+@import "./modules/social";
+@import "./modules/profession";
+@import "./modules/about";
+@import "./modules/services";
+@import "./modules/portfolio";
+@import "./modules/testimonial";
+@import "./modules/contact";
+@import "./modules/footer";

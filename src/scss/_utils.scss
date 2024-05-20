@@ -1,0 +1,40 @@
+@use "./varibles" as *;
+@use "./media" as *;
+@use "./mixin" as *;
+
+/*========== REUSABLE CSS CLASSES ==========*/
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 10rem 7% 10rem;
+
+  @include laptop {
+    padding: 10rem 3% 2rem;
+  }
+
+  @include table-xs {
+    padding-bottom: 7rem;
+  }
+}

@@ -1,0 +1,116 @@
+@use "../mixin" as *;
+@use "../media" as *;
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+
+    // .testimonial__title
+
+    &__title {
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+
+        text-align: center;
+
+        span {
+            color: var(--main-color);
+        }
+    }
+
+    // .testimonial__container
+
+    &__container {
+        position: relative;
+        max-width: 90rem;
+        width: 100%;
+        padding: 5rem;
+
+        @include table {
+            padding: 5rem 0;
+        }
+    }
+
+    // .testimonial__box
+
+    &__box {
+        padding: 1rem;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--main-color);
+
+            @include table {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--main-color);
+        }
+    }
+
+    // .testimonial__content
+
+    &__content {
+    }
+
+    // .testimonial__slide
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        border-radius: 2rem;
+        box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+        padding: 3rem 5rem;
+        border-top: 0.8rem solid var(--main-color);
+        border-bottom: 0.8rem solid var(--main-color);
+
+        @include table {
+            padding: 3rem 2rem;
+        }
+    }
+
+    // .testimonial__subtitle
+    &__subtitle {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    // .testimonial__img
+
+    &__img {
+        width: 14rem;
+        height: 14rem;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 0.5rem solid var(--bg-color);
+        outline: 0.5rem solid var(--main-color);
+    }
+
+    // .testimonial__description
+
+    &__description {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}

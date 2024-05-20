@@ -1,0 +1,124 @@
+@use "../mixin" as *;
+@use "../media" as *;
+
+.portfolio {
+    padding-bottom: 10rem;
+
+    @include table-xs {
+        padding-bottom: 7rem;
+    }
+
+    // .portfolio__title
+
+    &__title {
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+
+        text-align: center;
+
+        span {
+            color: var(--main-color);
+        }
+
+        @include table {
+            margin-bottom: 3rem;
+        }
+    }
+
+    // .portfolio__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+
+        @include table {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 617px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .portfolio__box
+
+    &__box {
+        position: relative;
+        display: flex;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        @include hover {
+            .portfolio__box-img {
+                transform: scale(1.1);
+            }
+
+            .portfolio__box-layer {
+                opacity: 1;
+            }
+        }
+    }
+
+    // .portfolio__box-img
+
+    &__box-img {
+        width: 100%;
+        transition: 0.5s ease;
+    }
+
+    // .portfolio__box-layer
+
+    &__box-layer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+        color: var(--white-color);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 4rem;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    // .portfolio__box-title
+
+    &__box-title {
+        font-size: 3rem;
+        color: var(--white-color);
+    }
+
+    // .portfolio__box-description
+
+    &__box-description {
+        font-size: 1.6rem;
+        margin: 0.3rem 0 1rem;
+    }
+
+    // .portfolio__box-link
+
+    &__box-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--white-color);
+        border-radius: 50%;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+            color: #333;
+        }
+    }
+}

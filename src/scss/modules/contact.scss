@@ -1,0 +1,76 @@
+@use "../mixin" as *;
+@use "../media" as *;
+
+.contact {
+
+    @include table-xs {
+        min-height: auto;
+    }
+    // .contact__title
+
+    &__title {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+
+        text-align: center;
+
+        span {
+            color: var(--main-color);
+        }
+    }
+
+    // .contact__form
+    &__form {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: var(--text-color);
+        background-color: var(--bg-input-color);
+        border-radius: 0.8rem;
+        margin: 0.7rem 0;
+        box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+        border: none;
+    }
+
+    // .contact__input
+    &__input {
+        width: 49%;
+        
+        @include mobile-xs {
+            width: 100%;
+        }
+    }
+
+    // .contact__textarea
+    &__textarea {
+        resize: none;
+    }
+
+    // .contact__input-box
+
+    &__input-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .contact__button
+
+    &__button {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+    // .contact__container
+
+    &__container {
+    }
+}

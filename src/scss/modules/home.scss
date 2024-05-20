@@ -1,0 +1,70 @@
+@use "../media" as *;
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include table {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @include mobile-xs {
+        padding: 0 3% 30rem;
+    }
+}
+
+.home-content {
+    max-width: 44rem;
+    z-index: 100;
+
+    @include table-xs {
+        max-width: 50rem;
+    }
+
+    // .home-content__subtitle
+
+    &__subtitle {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1;
+
+        @include table {
+            font-size: 2.6rem;
+        }
+    }
+
+    // .home-content__title
+
+    &__title {
+        font-size: 5.6rem;
+        font-weight: 700;
+
+        @include table {
+            font-size: 5rem;
+        }
+    }
+
+    // .home-content__description
+
+    &__description {
+        font-size: 1.6rem;
+    }
+}
+
+.home-img {
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 45vw;
+        pointer-events: none;
+
+        @include table-xs {
+            display: none;
+        }
+    }
+}

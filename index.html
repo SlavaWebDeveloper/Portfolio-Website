@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website Design | Codehal</title>
+    <script type="module" src="/src/js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#home" class="navbar__link navbar__link-active">Home</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#services" class="navbar__link">Services</a>
+        <a href="#portfolio" class="navbar__link">Portfolio</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__moon" id="darkMode-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          class="moon"
+        >
+          <path
+            d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          class="sun"
+        >
+          <path
+            d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM11 1h2v3h-2V1Zm0 19h2v3h-2v-3ZM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93ZM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121Zm2.121-14.85 1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121ZM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121ZM23 11v2h-3v-2h3ZM4 11v2H1v-2h3Z"
+          />
+        </svg>
+      </div>
+
+      <div class="navbar__menu-icon" id="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          class="menu-burger"
+        >
+          <path d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z" />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          class="menu-close show-burger"
+        >
+          <path
+            d="M10.586 12 2.793 4.207l1.414-1.414L12 10.586l7.793-7.793 1.414 1.414L13.414 12l7.793 7.793-1.414 1.414L12 13.414l-7.793 7.793-1.414-1.414L10.586 12Z"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- home section design -->
+    <section class="section home" id="home">
+      <div class="home-content">
+        <h3 class="home-content__subtitle">Hello, I am</h3>
+        <h1 class="home-content__title">Coach</h1>
+        <div class="home-content__description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            obcaecati iusto blanditiis reprehenderit beatae deserunt, quis
+            quidem?
+          </p>
+        </div>
+
+        <div class="social-media">
+          <a class="social-media__link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+              />
+            </svg>
+          </a>
+          <a class="social-media__link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+              />
+            </svg>
+          </a>
+          <a class="social-media__link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+              />
+              <circle cx="11.994" cy="11.979" r="3.003" />
+            </svg>
+          </a>
+          <a class="social-media__link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="4.983" cy="5.009" r="2.188" />
+              <path
+                d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <a href="#" class="button">Download CV</a>
+      </div>
+
+      <div class="profession-container">
+        <ul class="profession-box">
+          <li class="profession" style="--i: 0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m24 12-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12ZM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12Zm6.96 9H7.66l6.552-18h2.128L9.788 21Z"
+              />
+            </svg>
+            <h3 class="profession-title">Web Develeper</h3>
+          </li>
+
+          <li class="profession" style="--i: 1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2c5.522 0 10 3.978 10 8.889a5.558 5.558 0 0 1-5.556 5.555h-1.966c-.922 0-1.667.745-1.667 1.667 0 .422.167.811.422 1.1.267.3.434.689.434 1.122C13.667 21.256 12.9 22 12 22 6.478 22 2 17.522 2 12S6.478 2 12 2Zm-1.189 16.111a3.664 3.664 0 0 1 3.667-3.667h1.966A3.558 3.558 0 0 0 20 10.89C20 7.139 16.468 4 12 4a8 8 0 0 0-.676 15.972 3.648 3.648 0 0 1-.513-1.86ZM7.5 12a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm9 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3ZM12 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              />
+            </svg>
+            <h3 class="profession-title">Photographer</h3>
+          </li>
+
+          <li class="profession" style="--i: 2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m24 12-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12ZM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12Zm6.96 9H7.66l6.552-18h2.128L9.788 21Z"
+              />
+            </svg>
+            <h3 class="profession-title">Web Designer</h3>
+          </li>
+
+          <li class="profession" style="--i: 3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 7c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-3.333L22 17V7l-4 3.333V7zm-1.998 10H4V7h12l.001 4.999L16 12l.001.001.001 4.999z"
+              />
+            </svg>
+            <h3 class="profession-title">Videographer</h3>
+          </li>
+
+          <div class="circle"></div>
+        </ul>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div class="home-img">
+        <img src="./images/home.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+
+    <section class="about section" id="about">
+      <div class="about__wrapper-img">
+        <img src="./images/about.png" alt="" class="about__img" />
+      </div>
+
+      <div class="about__content">
+        <h2 class="about__title heading">About <span>me</span></h2>
+        <h3 class="about__subtitle">Hi, I'm Here To Help Your Next Project!</h3>
+        <div class="about__description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            nulla maiores dignissimos ipsum illo cupiditate nam, similique
+            consequatur amet alias quasi magnam molestiae eos quisquam
+            perferendis totam eligendi, fuga nisi saepe. Doloremque a, accusamus
+            enim nostrum perferendis voluptas doloribus nobis recusandae
+            officiis, suscipit aliquid labore totam culpa libero ut fuga
+            expedita iure voluptatum, illo minima omnis amet? Aliquam,
+            architecto doloremque?
+          </p>
+        </div>
+
+        <a href="#" class="button">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section design -->
+
+    <section class="section services" id="services">
+      <h2 class="services__title heading">My <span>Services</span></h2>
+
+      <ul class="services__container">
+        <li class="services__box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m24 12-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12ZM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12Zm6.96 9H7.66l6.552-18h2.128L9.788 21Z"
+            ></path>
+          </svg>
+          <h3 class="services__subtitle">Web Development</h3>
+          <div class="services__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste
+              cupiditate corporis inventore magni necessitatibus facere aut unde
+              non nisi, praesentium tenetur velit omnis voluptatem cumque alias
+              voluptatum dicta. Sunt quis ut officiis cumque ducimus, dolorum
+              aperiam harum labore perspiciatis!
+            </p>
+          </div>
+
+          <a href="#" class="button">Read More</a>
+        </li>
+
+        <li class="services__box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21.084 2.914c-1.178-1.179-3.234-1.179-4.412 0l-8.379 8.379a.999.999 0 0 0 0 1.414l3 3a.997.997 0 0 0 1.414 0l8.379-8.379a3.123 3.123 0 0 0-.002-4.414zm-1.412 3L12 13.586 10.414 12l7.672-7.672a1.146 1.146 0 0 1 1.586.002 1.123 1.123 0 0 1 0 1.584zM8 15c-1.265-.634-3.5 0-3.5 2 0 1.197.5 2-1.5 3 0 0 3.25 2.25 5.5 0 1.274-1.274 1.494-4-.5-5z"
+            />
+          </svg>
+          <h3 class="services__subtitle">Graphic Design</h3>
+          <div class="services__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste
+              cupiditate corporis inventore magni necessitatibus facere aut unde
+              non nisi, praesentium tenetur velit omnis voluptatem cumque alias
+              voluptatum dicta. Sunt quis ut officiis cumque ducimus, dolorum
+              aperiam harum labore perspiciatis!
+            </p>
+          </div>
+
+          <a href="#" class="button">Read More</a>
+        </li>
+
+        <li class="services__box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M2 12h2v9H2v-9Zm3 2h2v7H5v-7Zm11-6h2v13h-2V8Zm3 2h2v11h-2V10ZM9 2h2v19H9V2Zm3 2h2v17h-2V4Z"
+            />
+          </svg>
+
+          <h3 class="services__subtitle">Digital Marketing</h3>
+          <div class="services__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste
+              cupiditate corporis inventore magni necessitatibus facere aut unde
+              non nisi, praesentium tenetur velit omnis voluptatem cumque alias
+              voluptatum dicta. Sunt quis ut officiis cumque ducimus, dolorum
+              aperiam harum labore perspiciatis!
+            </p>
+          </div>
+
+          <a href="#" class="button services__button">Read More</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- portfolio section design -->
+
+    <section class="section portfolio" id="portfolio">
+      <h2 class="portfolio__title heading">Latest <span>Project</span></h2>
+
+      <ul class="portfolio__container">
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio1.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio2.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio3.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio4.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio5.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="portfolio__box">
+          <img
+            src="./images/portfolio6.jpg"
+            alt=""
+            class="portfolio__box-img"
+            loading="lazy"
+          />
+
+          <div class="portfolio__box-layer">
+            <h4 class="portfolio__box-title">Web Design</h4>
+
+            <div class="portfolio__box-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, saepe?
+              </p>
+            </div>
+
+            <a href="#" class="portfolio__box-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- testimonial design -->
+
+    <section class="section testimonial" id="portfolio">
+      <h2 class="testimonial__title heading">
+        Valuable <span>Testimonial</span>
+      </h2>
+
+      <div class="testimonial__container">
+        <div class="testimonial__box mySwiper">
+          <div class="testimonial__content swiper-wrapper">
+            <div class="testimonial__slide swiper-slide">
+              <img
+                src="./images/testimonial1.jpg"
+                alt=""
+                class="testimonial__img"
+                loading="lazy"
+              />
+
+              <h3 class="testimonial__subtitle">Jackson Levi</h3>
+
+              <div class="testimonial__description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                  eligendi cum corporis provident modi asperiores perspiciatis
+                  consequatur aspernatur, officia debitis sit, autem unde
+                  recusandae similique? Ad laboriosam illo voluptates
+                  architecto?
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial__slide swiper-slide">
+              <img
+                src="./images/testimonial2.jpg"
+                alt=""
+                class="testimonial__img"
+                loading="lazy"
+              />
+
+              <h3 class="testimonial__subtitle">Flora Octa</h3>
+
+              <div class="testimonial__description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                  eligendi cum corporis provident modi asperiores perspiciatis
+                  consequatur aspernatur, officia debitis sit, autem unde
+                  recusandae similique? Ad laboriosam illo voluptates
+                  architecto?
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial__slide swiper-slide">
+              <img
+                src="./images/testimonial3.jpg"
+                alt=""
+                class="testimonial__img"
+                loading="lazy"
+              />
+
+              <h3 class="testimonial__subtitle">Merry Men</h3>
+
+              <div class="testimonial__description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                  eligendi cum corporis provident modi asperiores perspiciatis
+                  consequatur aspernatur, officia debitis sit, autem unde
+                  recusandae similique? Ad laboriosam illo voluptates
+                  architecto?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="section contact" id="contact">
+      <h2 class="contact__title">Contact <span>Me!</span></h2>
+
+      <form action="#" class="contact__form">
+        <div class="contact__input-box">
+          <input class="contact__input" type="text" placeholder="Full Name" />
+          <input
+            class="contact__input"
+            type="email"
+            placeholder="Email Address"
+          />
+        </div>
+
+        <div class="contact__input-box">
+          <input
+            class="contact__input"
+            type="number"
+            placeholder="Mobile Number"
+          />
+          <input
+            class="contact__input"
+            type="text"
+            placeholder="Full Subject"
+          />
+        </div>
+        <textarea
+          class="contact__textarea"
+          name=""
+          id=""
+          cols="10"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <button
+          type="submit"
+          value="Send Message"
+          class="button contact__button"
+        >
+          Send Messag
+        </button>
+      </form>
+      <div class="contact__container"></div>
+    </section>
+
+    <!-- footer design -->
+
+    <footer class="footer">
+      <div class="footer__text">
+        <p>Copyright &copy; 2024 | All Rights Reserved</p>
+      </div>
+
+      <div class="footer__icon-top">
+        <a href="#home" class="footer__icon-top__link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m12 4.836-6.207 6.207 1.414 1.414L12 7.664l4.793 4.793 1.414-1.414L12 4.836Zm0 5.65-6.207 6.207 1.414 1.414L12 13.314l4.793 4.793 1.414-1.414L12 10.486Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>

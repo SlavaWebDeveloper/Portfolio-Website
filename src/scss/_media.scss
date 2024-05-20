@@ -1,0 +1,67 @@
+/*========== breakpoint ==========*/
+$desktop: 1200px;
+$laptop: 1024px;
+$table-xs: 991px;
+$table: 768px;
+$mobile-xs: 450px;
+$mobile: 365px;
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin table-xs {
+  @media screen and (max-width: $table-xs) {
+    @content;
+  }
+}
+
+@mixin table-xs-above {
+  @media screen and (min-width: $table-xs) {
+    @content;
+  }  
+}
+
+@mixin table {
+  @media screen and (max-width: $table) {
+    @content;
+  }
+}
+
+@mixin table-above {
+  @media screen and (min-width: $table) {
+    @content;
+  }  
+}
+
+@mixin mobile-xs {
+  @media screen and (max-width: $mobile-xs) {
+    @content;
+  }
+}
+
+@mixin mobile-xs-above {
+  @media screen and (min-width: $mobile-xs) {
+    @content;
+  }  
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }  
+}
