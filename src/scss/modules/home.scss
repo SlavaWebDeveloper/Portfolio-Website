@@ -21,6 +21,10 @@
     max-width: 44rem;
     z-index: 100;
 
+    @include table {
+        z-index: 0;
+    }
+
     @include table-xs {
         max-width: 50rem;
     }
