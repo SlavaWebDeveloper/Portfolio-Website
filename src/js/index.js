@@ -6,7 +6,7 @@ import Swiper from 'swiper/bundle';
 /*========== menu icon navbar ==========*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-let navbarMoon = document.querySelector('.navbar__moon')
+let navbarMoon = document.querySelector('.navbar__moon');
 
 menuIcon.addEventListener('click', function () {
     this.classList.toggle('open');
