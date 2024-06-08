@@ -3,27 +3,38 @@ import '@/scss/index.scss';
 import Swiper from 'swiper/bundle';
 
 
+/**
+ * Toggles the open class on the menu icon and navbar.
+ * @type {HTMLElement}
+ */
 /*========== menu icon navbar ==========*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let navbarMoon = document.querySelector('.navbar__moon');
 
+/**
+ * Event listener for the menu icon click.
+ */
 menuIcon.addEventListener('click', function () {
     this.classList.toggle('open');
     navbar.classList.toggle('open');
 });
 
+/**
+ * Toggles dark mode on and off.
+ */
 /*========== dark light mode ==========*/
 navbarMoon.addEventListener('click', function () {
     this.classList.toggle('open');
     document.body.classList.toggle('dark-mode');
 });
 
+/**
+ * Handles scroll events for activating navigation links based on the visible section.
+ */
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.navbar__link');
-
-
 
 window.onscroll = () => {
     let header = document.querySelector('.header');
@@ -47,7 +58,10 @@ window.onscroll = () => {
     navbar.classList.remove('open');
 };
 
-
+/**
+ * Initializes the Swiper instance for the ".mySwiper" container.
+ * @type {Swiper}
+ */
 /*========== swiper ==========*/
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -64,8 +78,11 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-/*========== scroll reveal ==========*/
 
+/**
+ * Initializes ScrollReveal animations with custom settings.
+ */
+/*========== scroll reveal ==========*/
 ScrollReveal({
     // reset: true,
     distance: '80px',
